@@ -8,34 +8,9 @@ let link3 = document.querySelector(".link3")
 let elForm = document.querySelector(".form")
 let elModal = document.querySelector(".modal-form")
 let elDel = document.querySelector(".modal__Delete")
-let elServicesHambur = document.querySelector(".services-hamburger")
-let elSerModal = document.querySelector(".services-modal")
-let elOpasitySer = document.querySelector(".services-main-part")
-
-let moreHamburger = document.querySelector(".more-hamburger")
-let moreModal = document.querySelector(".more-modal")
-let moreMain = document.querySelector(".more-main-section")
-
-moreHamburger.addEventListener("click" , function() {
-  moreHamburger.classList.toggle("black")
-})
-moreHamburger.addEventListener("click", function() {
-  moreModal.classList.toggle("block")
-})
-moreMain.addEventListener("click", function() {
-  moreHamburger.classList.remove("black")
-  moreModal.classList.remove("block")
-})
 
 
-elServicesHambur.addEventListener("click", function() {
-  elServicesHambur.classList.toggle("black")
-  elSerModal.classList.toggle("block")
-})
-elOpasitySer.addEventListener("click", function() {
-  elSerModal.classList.remove("block")
-  elServicesHambur.classList.remove("black")
-})
+
 
 
 // let elBody = document.querySelector(".body")
@@ -106,3 +81,4 @@ link3.addEventListener("click", function() {
   modal.classList.remove("block");
 
 })
+
