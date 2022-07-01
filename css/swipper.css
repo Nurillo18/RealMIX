@@ -1,0 +1,88 @@
+
+/* Hero Carusel Start */
+.swiper {
+    z-index: 1;
+    width: 750px;
+    height: 450px;
+    top:0;
+    right: -5%;
+}
+
+.swiper-slide {
+    transition: all 1s;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.15);
+}
+.swiper-slide{
+    transition: all 1s;
+    background:transparent;
+}
+
+/* Hero Carusel End */
+
+@media only screen and (max-width:1270px){
+    .swiper-slide img{
+        transform: scale(1);
+    }
+    .swiper{
+        width: 480px;
+    }
+}
+
+@media only screen and (max-width:945px){
+    .swiper{
+        transform: scale(1.2);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width:945px){
+    .swiper{
+        transform: scale(1);
+    }
+
+}
+@media only screen and (max-width:500px){
+    .swiper{
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .swiper-slide{
+        width: 100%;
+    }
+    .swiper img{
+        width: 300px;
+        height: 300px;
+    }
+    .hero__title{
+        font-size: 24px;
+    }
+    .hero__text{
+        font-size: 18px;
+    }
+
+}

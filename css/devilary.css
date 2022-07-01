@@ -1,0 +1,74 @@
+
+.services-main{
+    background-image: url("../imgs/devilary.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+
+}
+.services{
+    margin-top: 69px;
+    padding: 120px 20px;
+}
+.devilary{
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
+}
+.devilary__title{
+    margin-bottom: 10px;
+    font-size: 54px;
+    color: #fff;
+    text-shadow: 0.35px 0.35px 2px blue;
+
+}
+.devilary__text{
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 0.35px 0.35px 2px blue;
+}
+.services-footer{
+    padding: 20px 0 25px 0;
+    background-color: #F9F9F9;
+}
+
+
+@media only screen and (max-width:910px){
+    .devilary__title{
+        font-size: 45px;
+
+    }
+    .devilary__text{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:805px){
+    .services-main{
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width:610px){
+    .devilary__title{
+        font-size: 35px;
+
+    }
+    .devilary__text{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:420px){
+    .devilary__title{
+        font-size: 25px;
+
+    }
+    .devilary__text{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:380px){
+    .devilary__title{
+        font-size: 20px;
+
+    }
+}
