@@ -84,5 +84,8 @@
     .hero__text{
         font-size: 18px;
     }
+    .hero-tag-name{
+        font-size: 24px;
+    }
 
 }
