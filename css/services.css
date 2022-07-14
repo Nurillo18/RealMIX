@@ -116,20 +116,54 @@
 .products__list{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+}
+.product__tranform , .product__last-img{
+    z-index: -1;
+    opacity: 0.5;
+}
+.products__item{
+    position: relative;
+}
+.products__item:nth-child(3)::before ,.products__item:nth-child(4)::before, .products__item:nth-child(5)::before, .products__item:nth-child(6)::before {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 83px;
+    right: -271px;
+    font-weight: bold;
+    font-size: 56px;
+    transform: rotate(-45deg);
+    margin: auto;
+    animation: soon 0.4s ease-in;
+    animation-iteration-count: infinite;
+    content: "Tez Kunda";
+    color: red;
+}
+@keyframes soon {
+    0%{
+        color: red;
+    }
+    100%{
+        color: blue;
+    }
 }
 .products__item > a{
     display: inline-block;
     padding-bottom: 20px;
-    width: 400px;
+    width: 300px;
     background-color: rgba(0, 0, 0, 0.2);
     text-align: center;
     border-radius: 25px;
 }
-.products__item +.products__item{
-    margin-left: 50px;
+.product__middle-child{
+    margin: 0 20px;
 }
-
+.product__hight-part-link{
+    margin-bottom: 20px;
+}
 .products__subtitle{
     color: var(--clr-light_dark);
     text-shadow: var(--txs-shadow);
@@ -138,6 +172,12 @@
     color: var(--clr-light_dark);
     text-shadow: var(--txs-shadow);
 
+}
+.product__tranform{
+    transform: scale(0.85);
+}
+.product__last-img{
+    transform: scale(1.12);
 }
 /* Products part End */
 
