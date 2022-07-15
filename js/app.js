@@ -10,10 +10,6 @@ let elModal = document.querySelector(".modal-form")
 let elDel = document.querySelector(".modal__Delete")
 
 
-
-
-
-// let elBody = document.querySelector(".body")
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   centeredSlides: true,
@@ -81,4 +77,3 @@ link3.addEventListener("click", function() {
   modal.classList.remove("block");
 
 })
-
